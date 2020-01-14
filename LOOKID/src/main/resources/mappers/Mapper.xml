@@ -199,6 +199,11 @@
 	<delete id="reservation_delete">
 		delete from reservation where rv_pid=#{rv_pid}
 	</delete>
+	
+	<!-- GPS -->
+	<update id="device_update">
+		update device set x=#{x} y=#{y} where d_num=#{d_num}
+	</update>
 
 
 </mapper>

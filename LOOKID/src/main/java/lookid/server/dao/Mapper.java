@@ -73,5 +73,7 @@ public interface Mapper {
 	public void group_delete(@Param("rv_pid") int rv_pid);
 
 	public void reservation_delete(@Param("rv_pid") int rv_pid);
+	
+	public void device_update(@Param("x") double x,@Param("y") double y,@Param("d_num") String d_num);
 
 }
