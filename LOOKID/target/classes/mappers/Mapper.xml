@@ -12,13 +12,13 @@
 	<delete id="truncate_table">
 		truncate table device_child
 	</delete>
-
+	
 	<insert id="device">
 		insert into device(d_num) values(#{d_num})
 	</insert>
 
 	<insert id="device_child">
-		insert into device_child(d_num,c_name) values(#{d_num},#{c_name})
+		insert into device_child(d_num,c_name) values(#{d_num}, #{c_name})
 	</insert>
 
 	<select id="checkId" resultType="Integer">
