@@ -3,12 +3,13 @@ package lookid.server.vo;
 public class DeviceChildVO {
 
 	private int dc_pid;
-	private String device;
-	private String child;
+	private String d_num;
+	private String c_name;
 
-	public DeviceChildVO(String device, String child) {
-		this.device = device;
-		this.child = child;
+	public DeviceChildVO(String d_num, String c_name) {
+	
+		this.d_num = d_num;
+		this.c_name = c_name;
 	}
 
 	public int getDc_pid() {
@@ -19,26 +20,25 @@ public class DeviceChildVO {
 		this.dc_pid = dc_pid;
 	}
 
-	public String getDevice() {
-		return device;
+	public String getD_num() {
+		return d_num;
 	}
 
-	public void setDevice(String device) {
-		this.device = device;
+	public void setD_num(String d_num) {
+		this.d_num = d_num;
 	}
 
-	public String getChild() {
-		return child;
+	public String getC_name() {
+		return c_name;
 	}
 
-	public void setChild(String child) {
-		this.child = child;
+	public void setC_name(String c_name) {
+		this.c_name = c_name;
 	}
 
 	@Override
 	public String toString() {
-		return "DeviceChildVO [dc_pid=" + dc_pid + ", device=" + device + ", child=" + child + "]";
+		return "DeviceChildVO [dc_pid=" + dc_pid + ", d_num=" + d_num + ", c_name=" + c_name + "]";
 	}
-	
-	
+
 }
