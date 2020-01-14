@@ -23,94 +23,94 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>1. <input type="text" class="form-control" placeholder="기기 번호" name="device1" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child1" maxlength="50"/></td>
+							<td>1. <input type="text" class="form-control" placeholder="기기 번호" name="d_num1" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name1" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>2. <input type="text" class="form-control" placeholder="기기 번호" name="device2" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child2" maxlength="50"/></td>
+							<td>2. <input type="text" class="form-control" placeholder="기기 번호" name="d_num2" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name2" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>3. <input type="text" class="form-control" placeholder="기기 번호" name="device3" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child3" maxlength="50"/></td>
+							<td>3. <input type="text" class="form-control" placeholder="기기 번호" name="d_num3" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name3" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>4. <input type="text" class="form-control" placeholder="기기 번호" name="device4" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child4" maxlength="50"/></td>
+							<td>4. <input type="text" class="form-control" placeholder="기기 번호" name="d_num4" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name4" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>5. <input type="text" class="form-control" placeholder="기기 번호" name="device5" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child5" maxlength="50"/></td>
+							<td>5. <input type="text" class="form-control" placeholder="기기 번호" name="d_num5" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name5" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>6. <input type="text" class="form-control" placeholder="기기 번호" name="device6" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child6" maxlength="50"/></td>
+							<td>6. <input type="text" class="form-control" placeholder="기기 번호" name="d_num6" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name6" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>7. <input type="text" class="form-control" placeholder="기기 번호" name="device7" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child7" maxlength="50"/></td>
+							<td>7. <input type="text" class="form-control" placeholder="기기 번호" name="d_num7" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name7" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>8. <input type="text" class="form-control" placeholder="기기 번호" name="device8" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child8" maxlength="50"/></td>
+							<td>8. <input type="text" class="form-control" placeholder="기기 번호" name="d_num8" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name8" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>9. <input type="text" class="form-control" placeholder="기기 번호" name="device9" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child9" maxlength="50"/></td>
+							<td>9. <input type="text" class="form-control" placeholder="기기 번호" name="d_num9" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name9" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>10. <input type="text" class="form-control" placeholder="기기 번호" name="device10" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child10" maxlength="50"/></td>
+							<td>10. <input type="text" class="form-control" placeholder="기기 번호" name="d_num10" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name10" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>11. <input type="text" class="form-control" placeholder="기기 번호" name="device11" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child11" maxlength="50"/></td>
+							<td>11. <input type="text" class="form-control" placeholder="기기 번호" name="d_num11" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name11" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>12. <input type="text" class="form-control" placeholder="기기 번호" name="device12" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child12" maxlength="50"/></td>
+							<td>12. <input type="text" class="form-control" placeholder="기기 번호" name="d_num12" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name12" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>13. <input type="text" class="form-control" placeholder="기기 번호" name="device13" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child13" maxlength="50"/></td>
+							<td>13. <input type="text" class="form-control" placeholder="기기 번호" name="d_num13" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name13" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>14. <input type="text" class="form-control" placeholder="기기 번호" name="device14" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child14" maxlength="50"/></td>
+							<td>14. <input type="text" class="form-control" placeholder="기기 번호" name="d_num14" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name14" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>15. <input type="text" class="form-control" placeholder="기기 번호" name="device15" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child15" maxlength="50"/></td>
+							<td>15. <input type="text" class="form-control" placeholder="기기 번호" name="d_num15" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name15" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>16. <input type="text" class="form-control" placeholder="기기 번호" name="device16" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child16" maxlength="50"/></td>
+							<td>16. <input type="text" class="form-control" placeholder="기기 번호" name="d_num16" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name16" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>17. <input type="text" class="form-control" placeholder="기기 번호" name="device17" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child17" maxlength="50"/></td>
+							<td>17. <input type="text" class="form-control" placeholder="기기 번호" name="d_num17" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name17" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>18. <input type="text" class="form-control" placeholder="기기 번호" name="device18" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child18" maxlength="50"/></td>
+							<td>18. <input type="text" class="form-control" placeholder="기기 번호" name="d_num18" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name18" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>19. <input type="text" class="form-control" placeholder="기기 번호" name="device19" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child19" maxlength="50"/></td>
+							<td>19. <input type="text" class="form-control" placeholder="기기 번호" name="d_num19" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name19" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>20. <input type="text" class="form-control" placeholder="기기 번호" name="device20" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child20" maxlength="50"/></td>
+							<td>20. <input type="text" class="form-control" placeholder="기기 번호" name="d_num20" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name20" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>21. <input type="text" class="form-control" placeholder="기기 번호" name="device21" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child21" maxlength="50"/></td>
+							<td>21. <input type="text" class="form-control" placeholder="기기 번호" name="d_num21" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name21" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>22. <input type="text" class="form-control" placeholder="기기 번호" name="device22" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child22" maxlength="50"/></td>
+							<td>22. <input type="text" class="form-control" placeholder="기기 번호" name="d_num22" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name22" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>23. <input type="text" class="form-control" placeholder="기기 번호" name="device23" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child23" maxlength="50"/></td>
+							<td>23. <input type="text" class="form-control" placeholder="기기 번호" name="d_num23" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name23" maxlength="50"/></td>
 						</tr>
 						<tr> 
-							<td>24. <input type="text" class="form-control" placeholder="기기 번호" name="device24" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child24" maxlength="50"/></td>
+							<td>24. <input type="text" class="form-control" placeholder="기기 번호" name="d_num24" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name24" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>25. <input type="text" class="form-control" placeholder="기기 번호" name="device25" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child25" maxlength="50"/></td>
+							<td>25. <input type="text" class="form-control" placeholder="기기 번호" name="d_num25" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name25" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>26. <input type="text" class="form-control" placeholder="기기 번호" name="device26" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child26" maxlength="50"/></td>
+							<td>26. <input type="text" class="form-control" placeholder="기기 번호" name="d_num26" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name26" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>27. <input type="text" class="form-control" placeholder="기기 번호" name="device27" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child27" maxlength="50"/></td>
+							<td>27. <input type="text" class="form-control" placeholder="기기 번호" name="d_num27" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name27" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>28. <input type="text" class="form-control" placeholder="기기 번호" name="device28" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child28" maxlength="50"/></td>
+							<td>28. <input type="text" class="form-control" placeholder="기기 번호" name="d_num28" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name28" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>29. <input type="text" class="form-control" placeholder="기기 번호" name="device29" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child29" maxlength="50"/></td>
+							<td>29. <input type="text" class="form-control" placeholder="기기 번호" name="d_num29" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name29" maxlength="50"/></td>
 						</tr>
 						<tr>
-							<td>30. <input type="text" class="form-control" placeholder="기기 번호" name="device30" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="child30" maxlength="50"/></td>
+							<td>30. <input type="text" class="form-control" placeholder="기기 번호" name="d_num30" maxlength="50"/>&nbsp;<input type="text" class="form-control" placeholder="피보호자" name="c_name30" maxlength="50"/></td>
 						</tr>
 						
 					</tbody>
