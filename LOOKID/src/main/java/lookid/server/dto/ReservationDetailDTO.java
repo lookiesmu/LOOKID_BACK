@@ -1,45 +1,44 @@
 package lookid.server.dto;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
-// 전체 예약 정보 (예약 하기, 예약 조회, 예약 수정 등에 사용)
+import lookid.server.vo.ReservationVO;
+
 public class ReservationDetailDTO {
 
-	// 예약 정보
-	private ReservationDTO reservation;
-	// 그룹 개수
-	private int groupCount;
-	// 그룹 당 피보호자, 관리자 정보¸
-	private GroupInfoDTO[] groupInfo;
+	private ReservationVO reservation;
 
-	public ReservationDTO getReservation() {
+	private List<GroupInfoDTO> group_list;
+
+	public ReservationDetailDTO() {
+		this.group_list = new ArrayList<GroupInfoDTO>();
+	}
+
+	public ReservationVO getReservation() {
 		return reservation;
 	}
 
-	public void setReservation(ReservationDTO reservation) {
+	public void setReservation(ReservationVO reservation) {
 		this.reservation = reservation;
 	}
 
-	public int getGroupCount() {
-		return groupCount;
+
+	public List<GroupInfoDTO> getGroup_list() {
+		return group_list;
 	}
 
-	public void setGroupCount(int groupCount) {
-		this.groupCount = groupCount;
+	public void setGroup_list(List<GroupInfoDTO> group_list) {
+		this.group_list = group_list;
 	}
 
-	public GroupInfoDTO[] getGroupInfo() {
-		return groupInfo;
-	}
-
-	public void setGroupInfo(GroupInfoDTO[] groupInfo) {
-		this.groupInfo = groupInfo;
+	public void addGroupInfoDTO(GroupInfoDTO groupinfodto) {
+		this.group_list.add(groupinfodto);
 	}
 
 	@Override
 	public String toString() {
-		return "ReservationDetailDTO [reservation=" + reservation + ", groupCount=" + groupCount + ", groupInfo="
-				+ Arrays.toString(groupInfo) + "]";
+		return "ReservationDetailDTO [reservation=" + reservation + ", group_list=" + group_list + "]";
 	}
 
 }

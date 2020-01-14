@@ -1,13 +1,22 @@
 package lookid.server.dto;
 
+import java.util.Arrays;
+
 public class GroupInfoDTO {
 
-	// 그룹 정보
 	private GroupDTO group;
-	// child_pid 가 , 로 구분되어 string 으로
-	private String child;
-	// admin (user_pid) 가 , 로 구분되어 stringd으로
-	private String admin;
+
+	private ChildDTO[] child;
+
+	private AdminDTO[] admin;
+
+	public GroupInfoDTO() {
+		super();
+	}
+
+	public GroupInfoDTO(GroupDTO groupdto) {
+		this.group = groupdto;
+	}
 
 	public GroupDTO getGroup() {
 		return group;
@@ -17,25 +26,26 @@ public class GroupInfoDTO {
 		this.group = group;
 	}
 
-	public String getChild() {
+	public ChildDTO[] getChild() {
 		return child;
 	}
 
-	public void setChild(String child) {
+	public void setChild(ChildDTO[] child) {
 		this.child = child;
 	}
 
-	public String getAdmin() {
+	public AdminDTO[] getAdmin() {
 		return admin;
 	}
 
-	public void setAdmin(String admin) {
+	public void setAdmin(AdminDTO[] admin) {
 		this.admin = admin;
 	}
 
 	@Override
 	public String toString() {
-		return "GroupInfoDTO [group=" + group + ", child=" + child + ", admin=" + admin + "]";
+		return "GroupInfoDTO [group=" + group + ", child=" + Arrays.toString(child) + ", admin="
+				+ Arrays.toString(admin) + "]";
 	}
 
 }
