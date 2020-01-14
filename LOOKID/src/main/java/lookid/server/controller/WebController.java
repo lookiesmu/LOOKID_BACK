@@ -107,7 +107,6 @@ public class WebController {
 		
 		UserPageDTO dto = null;
 		int count = mapper.count() + 1;
-//		request.setAttribute("count", count);
 		
 		for(int i = 1; i <= count; i++) {
 			if((dto = mapper.userPage(i)) != null) {
