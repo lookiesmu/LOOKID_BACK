@@ -70,7 +70,7 @@ public class WebController {
 			DeviceChildVO dcvo = new DeviceChildVO(request.getParameter("d_num" + Integer.toString(i)), request.getParameter("c_name" + Integer.toString(i)));
 			DeviceVO dvo = new DeviceVO(request.getParameter("d_num" + Integer.toString(i)));
 			mapper.device_child(dcvo);		
-			mapper.device(dvo);
+//			mapper.device(dvo);
 		}
 		
 		return "admin/deviceAction";
@@ -106,9 +106,8 @@ public class WebController {
 	public String userActionPage(HttpServletRequest request) {
 		
 		UserPageDTO dto = null;
-		int count = mapper.count() + 1;
 		
-		for(int i = 1; i <= count; i++) {
+		for(int i = 1; i <= 500; i++) {
 			if((dto = mapper.userPage(i)) != null) {
 				request.setAttribute("userInfo"+Integer.toString(i), dto);
 			}
