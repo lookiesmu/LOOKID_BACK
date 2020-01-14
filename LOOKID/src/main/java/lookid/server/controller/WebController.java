@@ -61,14 +61,14 @@ public class WebController {
 		mapper.truncate_table();
 		
 		int j = 1;
-		while(!request.getParameter("child" + Integer.toString(j)).equals("")) {
+		while(!request.getParameter("c_name" + Integer.toString(j)).equals("")) {
 			j++;
 		}
 		
 		for(int i = 1; i < j; i++) {
 		
-			DeviceChildVO dcvo = new DeviceChildVO(request.getParameter("device" + Integer.toString(i)), request.getParameter("child" + Integer.toString(i)));
-			DeviceVO dvo = new DeviceVO(request.getParameter("device" + Integer.toString(i)));
+			DeviceChildVO dcvo = new DeviceChildVO(request.getParameter("d_num" + Integer.toString(i)), request.getParameter("c_name" + Integer.toString(i)));
+			DeviceVO dvo = new DeviceVO(request.getParameter("d_num" + Integer.toString(i)));
 			mapper.device_child(dcvo);		
 			mapper.device(dvo);
 		}
