@@ -5,6 +5,22 @@
 
 <mapper namespace="lookid.server.dao.Mapper">
 
+	<select id="userPage" resultType="lookid.server.dto.UserPageDTO">
+		select * from user where user_pid=#{user_pid}
+	</select>
+
+	<delete id="truncate_table">
+		truncate table device_child
+	</delete>
+
+	<insert id="device">
+		insert into device(d_num) values(#{d_num})
+	</insert>
+
+	<insert id="device_child">
+		insert into device_child(device,child) values(#{device}, #{child})
+	</insert>
+
 	<select id="checkId" resultType="Integer">
 		select user_pid from user where
 		id=#{id}
@@ -116,10 +132,12 @@
 	</select>
 
 	<!-- child 상세 조회 -->
-	<select id="child_detail" resultType="lookid.server.dto.ChildDTO">
-		select c_name from child
-		where g_pid=#{g_pid}
-	</select>
+   <select id="child_detail" resultType="lookid.server.dto.ChildDTO">
+      select c_pid,c_name,x,y 
+      from child
+      join device on child.d_pid = device.d_pid
+      where child.g_pid=#{g_pid}
+   </select>
 
 	<!-- admin 상세조회 -->
 	<select id="admin_detail" resultType="lookid.server.dto.AdminDTO">
