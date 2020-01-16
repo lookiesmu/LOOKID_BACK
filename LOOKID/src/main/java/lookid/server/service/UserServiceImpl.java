@@ -104,7 +104,7 @@ public class UserServiceImpl implements UserService {
          String from = "smulookid@gmail.com";
          String fromname = "LOOKID";
 
-         String to = "enfkdla@naver.com";
+         String to = email;
 
          String SMTP_USERNAME = "AKIAQKE5G6BCVQZGAL72";
          String SMTP_PASSWORD = "BBimterFLvsl1JQanGKs2djL+ZhgixO06mMV8AcqGQS5";
