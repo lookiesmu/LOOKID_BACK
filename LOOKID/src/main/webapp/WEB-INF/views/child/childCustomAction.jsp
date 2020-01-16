@@ -26,9 +26,7 @@
     String xmlUseYN = ""; // xml 사용여부
     
     String reference = ""; // 출처 
-
     String urlStr = "http://www.safe182.go.kr/api/lcm/amberList.do";
-
     String params = "esntlId=";
     params += esntlId;
     params += "&authKey=";
@@ -37,12 +35,10 @@
     params += rowSize;
     params += "&page=";
     params += pageNum;
-
     for(int i=0; i<writngTrgetDscds.length; i++){
         params += "&writngTrgetDscds=";
         params += writngTrgetDscds[i];
     }
-
     params += "&sexdstnDscd=";
     params += sexdstnDscd;
     params += "&nm=";
@@ -61,28 +57,22 @@
     params += occrAdres;
     params += "&xmlUseYN=";
     params += xmlUseYN;
-
     URL url;
     URLConnection connection;
     OutputStreamWriter wr = null;
     InputStreamReader isr = null;
     BufferedReader br = null;
-
     String result = "";
-
     try{
         url = new URL(urlStr);
         connection = url.openConnection();
         connection.setDoOutput(true);
-
         wr = new OutputStreamWriter(connection.getOutputStream());
         wr.write(params);
         wr.flush();
-
         isr = new InputStreamReader(connection.getInputStream(), "utf-8");
         br = new BufferedReader(isr);
         String buf = "";
-
         while(true){
              buf = br.readLine();
              if(buf == null){
@@ -91,7 +81,6 @@
                  result = buf;
              }
          }
-
      } catch(MalformedURLException e){
          e.printStackTrace();
      } catch(IOException ioe){
@@ -101,7 +90,6 @@
          isr.close();
          br.close();
      }
-
 %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -110,13 +98,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>실종정보 OPEN API</title>
 <style type="text/css">
-	body {margin:0px; padding:0px; font-size:12px; font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif; line-height:1.5em; color:#666;}
+   body {margin:0px; padding:0px; font-size:12px; font-family:"돋움",Dotum,Helvetica,AppleGothic,Sans-serif; line-height:1.5em; color:#666;}
 </style>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript">
     var resultStr = '<%= result %>';
     var jsonObject = jQuery.parseJSON(resultStr.replace(/\s/g, "<br />"));
-
     var _result = jsonObject.result;
     var _msg = jsonObject.msg;
     var _totalCount = jsonObject.totalCount;
@@ -124,7 +111,6 @@
     
     var status = ""; // 대상구분
     var address =""; // 주소 open API 형식 수정
-
     function rand(){ // 미아공고 랜덤 출력;  랜덤정수 1~50
        return Math.floor(Math.random() * 50) + 1;
     }   
@@ -134,12 +120,12 @@
       
       if(_list[i].rnum == j){ // rnum : 신고 건 고유번호 (캡슐화되어있음) ; 웹 우클릭 -> 소스보기
          
-      	  // 가변길이
-    	  //document.write('<table border="1" width="100%" height="100%" bgcolor="#ffdb70" cellspacing=0.1 style="font-size:1em; color: #222b3c; font-family: NotoSansCJKkrBold">'); 
+           // 가변길이
+         //document.write('<table border="1" width="100%" height="100%" bgcolor="#ffdb70" cellspacing=0.1 style="font-size:1em; color: #222b3c; font-family: NotoSansCJKkrBold">'); 
           //bgcolor : 테이블 색, cellspacing : 테이블 테두리 가늘기,  color : 폰트색 , width/height : 100% 크기에 맞게 자동조절, font-family: 폰트, font-size:1em 폰트크기(가변)
-    	  
-      	   // 고정길이  1.6:1.0 에서 웹 가득 채우는 것으로 변경
-      	   document.write('<table border="1" width="100%" height="718" bgcolor="#ffdb70" cellspacing=0.1 style="font-size:2.5em; color: #222b3c; font-family: NotoSansCJKkrBold">'); 
+         
+            // 고정길이  1.6:1.0 에서 웹 가득 채우는 것으로 변경
+            document.write('<table border="1" width="100%" height="100%" bgcolor="#ffdb70" cellspacing=0.1 style="font-size:2.5em; color: #222b3c; font-family: NotoSansCJKkrBold">'); 
            
            // 폰트크기 : style="font-size:1em;"
            document.write('    <tr>');
@@ -195,13 +181,12 @@
          
    }
    
-   setTimeout("location.reload()",10000); // 10초마다 페이지 갱신
+   setTimeout("location.reload()",5000); // 5초마다 페이지 갱신
    
    /*
       최근 실종 접수 50건(모든 연령) 10초마다 랜덤 출력 (새로운 실종 접수 데이터는 경찰청으로 부터 자동갱신됨)
       랜덤으로 출력해야 가장 최근에 신고가 접수된 미아만 계속 출력되는것을 방지할 수 있다.
    */
-
 </script>
 </head>
 <body>
