@@ -94,6 +94,6 @@ hs_err_pid*
 
 root-context.xml
 
-UserServiceImpl.java
+lookid/server/service/UserServiceImpl.java
 
 Servers/
