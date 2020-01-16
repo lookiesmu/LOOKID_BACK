@@ -99,7 +99,6 @@ public class UserServiceImpl implements UserService {
                buf.append((rnd.nextInt(10)));
             }
          }
-         
          temp_pw = buf.toString();
 
          String from = "smulookid@gmail.com";
