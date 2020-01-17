@@ -13,8 +13,6 @@ public interface UserService {
 
 	public FindIdDTO find_id(String name, String phone) throws Exception;
 
-	public SuccessDTO find_pw(String id, String mail) throws Exception;
-
 	public AdminDTO find_admin(String id) throws Exception;
 	
 	public int count() throws Exception;

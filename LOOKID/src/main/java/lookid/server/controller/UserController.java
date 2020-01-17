@@ -21,6 +21,7 @@ import lookid.server.dto.SuccessDTO;
 import lookid.server.dto.UserDTO;
 import lookid.server.service.JUserService;
 import lookid.server.service.JWTService;
+import lookid.server.service.UserSESService;
 import lookid.server.service.UserService;
 import lookid.server.vo.UserVO;
 
@@ -35,6 +36,10 @@ public class UserController {
 	@Autowired
 	@Qualifier("UserService")
 	private UserService service;
+
+	@Autowired
+	@Qualifier("UserSESService")
+	private UserSESService sesservice;
 
 	@Autowired
 	@Qualifier("JWTService")
@@ -52,15 +57,17 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/find_id", method = RequestMethod.GET)
-	public @ResponseBody FindIdDTO find_id(@RequestParam(value = "name") String name, @RequestParam(value = "phone") String phone) throws Exception {
+	public @ResponseBody FindIdDTO find_id(@RequestParam(value = "name") String name,
+			@RequestParam(value = "phone") String phone) throws Exception {
 
-		return service.find_id(name,phone);
+		return service.find_id(name, phone);
 
 	}
 
 	@RequestMapping(value = "/find_pw", method = RequestMethod.GET)
-	public @ResponseBody SuccessDTO find_pw(@RequestParam(value = "id") String id, @RequestParam(value = "mail") String mail) throws Exception {
-		return service.find_pw(id,mail);
+	public @ResponseBody SuccessDTO find_pw(@RequestParam(value = "id") String id,
+			@RequestParam(value = "mail") String mail) throws Exception {
+		return sesservice.find_pw(id, mail);
 	}
 
 	@RequestMapping(value = "/find_admin", method = RequestMethod.GET)
